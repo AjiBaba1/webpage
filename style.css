@@ -1,0 +1,48 @@
+header nav ul {
+    background-color: #98baa8;
+    overflow: hidden;
+}
+
+header nav ul li {
+    float: left;
+    list-style-type: none;
+    padding: 14px 16px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+header nav ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Hide header in hamburger button */
+.hamburger {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+    background: transparent;
+    border: none;
+}
+
+header {
+    background: #98baa8;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    color: #000301;
+    text-align: center;
+    margin-top: 20px;
+}

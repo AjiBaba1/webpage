@@ -5,9 +5,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Victor Ajiteru</title> 
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
+        <header id="mainHeader">
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -18,6 +19,17 @@
                 </ul>
             </nav>
         </header>
+
+        
+        <button class="hamburger" onclick="toggleHeader()">&#9776;</button>
+
+        <script>
+            function toggleHeader() {
+                const header = document.getElementById("mainHeader");
+                header.classList.toggle("hidden");
+            }
+        </script>
+
         <h1>Victor Ajiteru</h1>
         <img src="C:\Users\HP\Downloads\IMG_7815.HEIC" alt="My Profile Image">
         <p>Hello, welcome to my personal page!</p>
