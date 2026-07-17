@@ -4,17 +4,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Academic Planner</title>
         <script src="script.js" defer></script>
-        <style src="style.css"></style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <header id="mainHeader">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="planner.html">Academic Planner</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <button class="hamburger" onclick="toggleHeader()">&#9776;</button>
+
         <div class="planner-container">
             <h2>My Academic Planner</h2>
 
             <div class="input-section">
                 <input type="text" id="taskInput" placeholder="Enter a task">
-                <button id="addTaskButton">Add Task</button>
+                <button id="addTaskButton">Add</button>
             </div>
 
             <ul id="taskList"></ul>
         </div>
+        
+        <footer>
+            <p><a href="https://github.com/AjiBaba1" target="_blank">GitHub</a></p>
+            <p>&copy; 2026 Victor Ajiteru. All rights reserved.</p>
+        </footer>
     </body>
