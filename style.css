@@ -64,9 +64,9 @@ header nav ul li a:hover {
     cursor: pointer;
     padding: 10px;
     font-size: 24px;
-    background: #98baa8;
+    background: transparent;
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     position: fixed;
     top: 0;
     right: 0;
@@ -76,7 +76,7 @@ header nav ul li a:hover {
 }
 
 .hamburger:hover {
-    background-color: #7a9d91;
+    background-color: rgba(255,255,255,0.12);
 }
 
 header.hidden nav {
@@ -114,6 +114,7 @@ h1 {
     margin-top: 30px;
     margin-bottom: 20px;
     font-size: 2.5em;
+    font-style: noto Sans;
 }
 
 h2 {
@@ -457,4 +458,24 @@ ul li a:hover {
         width: 150px;
         height: 150px;
     }
+    
+}.about-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #98baa8 0%, #7a9d91 100%);
+    color: #fff;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(152, 186, 168, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.about-link:hover {
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(152, 186, 168, 0.35);
+    opacity: 0.95;
 }
